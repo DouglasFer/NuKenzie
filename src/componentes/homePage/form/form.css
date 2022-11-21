@@ -1,0 +1,95 @@
+button {
+  cursor: pointer;
+}
+
+.container_form {
+  border: 1px solid #e9ecef;
+  position: absolute;
+  width: 363px;
+  height: 351px;
+  left: 258px;
+  top: 127px;
+  max-width: 36%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  max-width: 100%;
+}
+.descrition_style {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+  width: 82%;
+  align-items: flex-start;
+}
+.descrition_style p {
+  font-size: 14px;
+  height: 8px;
+}
+form input {
+  height: 40px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+}
+.descrition_style :last-child {
+  font-size: 10px;
+}
+.descrition_style input {
+  width: 95%;
+  padding-left: 10px;
+}
+.align_value_select {
+  display: flex;
+  gap: 20px;
+  width: 86%;
+  align-items: center;
+}
+.align_value_select input {
+  height: 40px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  width: 100%;
+}
+.align_value_select select {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.type_value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+label {
+  font-size: 13px;
+}
+.btn_insert_value {
+  background: #fd377e;
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  color: white;
+  width: 86%;
+  height: 40px;
+}
+
+@media (max-width: 599px) {
+  .container_form {
+    left: 70px;
+    width: 363px;
+    max-width: 73%;
+  }
+}

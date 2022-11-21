@@ -1,0 +1,30 @@
+.header_container {
+  width: 100%;
+  display: flex;
+  gap: 59%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 7px 15px -4px rgb(0 0 0 / 20%);
+}
+.header_container h2 b {
+  color: #fd377e;
+  font-weight: 700;
+}
+.header_container button {
+  width: 64px;
+  height: 40px;
+  background-color: #e9ecef;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: -143px;
+}
+
+@media (max-width: 599px) {
+  .header_container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,43 @@
+.container_list_cards {
+  position: absolute;
+  width: 560px;
+  height: 627px;
+  left: 680px;
+  top: 122px;
+  max-width: 46%;
+}
+.container_filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 86%;
+}
+.container_filters p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #212529;
+}
+.btns_filter {
+  display: flex;
+  gap: 8px;
+}
+.btns_filter button {
+  width: 60px;
+  height: 30px;
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+}
+.btns_filter button:hover {
+  background: #fd377e;
+  border: 1.4px solid #fd377e;
+  border-radius: 8px;
+  color: #e9ecef;
+}
+@media (max-width: 599px) {
+  .container_list_cards {
+    left: 40px;
+    top: 620px;
+    max-width: 83%;
+  }
+}
