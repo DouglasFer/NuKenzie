@@ -1,5 +1,6 @@
 .header_container {
   width: 100%;
+  height: 80px;
   display: flex;
   gap: 59%;
   justify-content: center;

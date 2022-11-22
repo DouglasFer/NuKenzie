@@ -36,8 +36,13 @@
 }
 @media (max-width: 599px) {
   .container_list_cards {
-    left: 40px;
+    left: 76px;
     top: 620px;
     max-width: 83%;
+  }
+}
+@media (min-width: 1500px) {
+  .container_list_cards {
+    left: 54%;
   }
 }

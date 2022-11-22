@@ -32,3 +32,8 @@
     max-width: 73%;
   }
 }
+@media (min-width: 1500px) {
+  .container_total_money {
+    left: 30%;
+  }
+}

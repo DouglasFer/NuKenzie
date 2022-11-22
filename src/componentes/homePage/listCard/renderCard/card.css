@@ -34,3 +34,8 @@ ul {
   border: none;
   border-radius: 4px;
 }
+@media (min-width: 1500px) {
+  .li_card_values {
+    left: 54%;
+  }
+}

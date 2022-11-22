@@ -93,3 +93,8 @@ label {
     max-width: 73%;
   }
 }
+@media (min-width: 1500px) {
+  .container_form {
+    left: 30%;
+  }
+}
