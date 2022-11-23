@@ -49,14 +49,15 @@ const FormValuesComponent = ({ addValues }) => {
           <div className="type_value">
             <label>Tipo de valor</label>
             <select
-              name=""
+              name="select_type"
               required
-              id=""
-              defaultValue="entrada"
+              id="type_value"
+              value={formValues.type}
               onChange={(event) =>
                 setFormValues({ ...formValues, type: event.target.value })
               }
             >
+              <option></option>
               <option key="entrada" value="entrada">
                 Entrada
               </option>
