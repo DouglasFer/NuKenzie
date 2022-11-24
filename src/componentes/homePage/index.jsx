@@ -13,20 +13,16 @@ const PageNuKenzie = ({
   setStart,
 }) => {
   return (
-    <div className="container">
+    <>
       <HeaderPage setStart={setStart} />
-      <div className="content_page">
-        <div className="container_values">
-          <FormValuesComponent addValues={addValues} setFilter={setFilter} />
-          <TotalMoney values={values} listTransaction={listTransaction} />
-        </div>
-        <ListValuesInserted
-          listTransaction={listTransaction}
-          setFilter={setFilter}
-          removeCard={removeCard}
-        />
-      </div>
-    </div>
+      <FormValuesComponent addValues={addValues} setFilter={setFilter} />
+      <TotalMoney values={values} listTransaction={listTransaction} />
+      <ListValuesInserted
+        listTransaction={listTransaction}
+        setFilter={setFilter}
+        removeCard={removeCard}
+      />
+    </>
   );
 };
 export default PageNuKenzie;

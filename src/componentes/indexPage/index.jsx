@@ -11,8 +11,8 @@ export function ScreenIndex({ setStart }) {
           <h5>de forma rápida e segura</h5>
           <button onClick={() => setStart(true)}>Iniciar</button>
         </div>
-        <div>
-          <img src={ImgIndex} alt="" width="530px" />
+        <div className="div_img_Index">
+          <img src={ImgIndex} alt="" />
         </div>
       </div>
     </div>

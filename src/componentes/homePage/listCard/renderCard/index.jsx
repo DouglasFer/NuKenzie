@@ -2,7 +2,7 @@ import React from "react";
 import "./card.css";
 import Lixeira from "../../../../images/lixo.png";
 
-const Card = ({ transaction, removeCard }) => {
+const Card = ({ transaction, removeCard, index }) => {
   return (
     <li className="li_card_values ">
       <div className="description_type_style">
@@ -11,10 +11,7 @@ const Card = ({ transaction, removeCard }) => {
       </div>
       <div className="value_btn_style">
         <p>R$ {transaction.value}</p>
-        <button
-          className="btn_trash"
-          onClick={() => removeCard(transaction.description)}
-        >
+        <button className="btn_trash" onClick={() => removeCard(index)}>
           <img src={Lixeira} alt="" className="img_trash" />
         </button>
       </div>

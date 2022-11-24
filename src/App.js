@@ -3,10 +3,7 @@ import "./App.css";
 import PageNuKenzie from "./componentes/homePage";
 import { ScreenIndex } from "./componentes/indexPage";
 function App() {
-  const formValues = [
-    { description: "Salário recebido", value: 2500, type: "entrada" },
-    { description: "Conta de luz", value: 150, type: "saida" },
-  ];
+  const formValues = [];
   const [start, setStart] = useState(false);
   const [listTransaction, setListTransactions] = useState(formValues);
   const [filter, setFilter] = useState("todos");
@@ -30,15 +27,15 @@ function App() {
     setListTransactions([...listTransaction, formData]);
   }
 
-  function removeCard(listDescription) {
+  function removeCard(index_card) {
     const new_list = listTransaction.filter(
-      (list) => list.description !== listDescription
+      (list, index) => index !== index_card
     );
     setListTransactions(new_list);
   }
 
   return (
-    <div className="App">
+    <>
       {start ? (
         <PageNuKenzie
           addValues={addValues}
@@ -51,7 +48,7 @@ function App() {
       ) : (
         <ScreenIndex setStart={setStart} />
       )}
-    </div>
+    </>
   );
 }
 export default App;

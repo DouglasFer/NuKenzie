@@ -20,6 +20,7 @@
   font-size: 25px;
   line-height: 48px;
   color: white;
+  max-width: 40%;
 }
 .aside_text p b {
   color: #fd377e;
@@ -39,4 +40,8 @@
 .img_width {
   width: 593px;
   height: 593px;
+}
+.div_img_Index img {
+  width: 530px;
+  max-width: 100%;
 }

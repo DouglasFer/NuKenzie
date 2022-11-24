@@ -17,6 +17,7 @@ const ListValuesInserted = ({ listTransaction, setFilter, removeCard }) => {
           {listTransaction.map((transaction, index) => (
             <Card
               key={index}
+              index={index}
               transaction={transaction}
               removeCard={removeCard}
             />

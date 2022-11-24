@@ -1,16 +1,16 @@
 .container_list_cards {
   position: absolute;
-  width: 560px;
-  height: 627px;
+  width: 700px;
+  height: auto;
   left: 680px;
   top: 122px;
-  max-width: 46%;
+  max-width: 25%;
 }
 .container_filters {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  max-width: 86%;
+  justify-content: space-between;
+  max-width: 100%;
 }
 .container_filters p {
   font-weight: 700;
@@ -34,15 +34,26 @@
   border-radius: 8px;
   color: #e9ecef;
 }
-@media (max-width: 599px) {
+@media (max-width: 720px) {
   .container_list_cards {
-    left: 76px;
+    left: 138px;
     top: 620px;
-    max-width: 83%;
   }
 }
 @media (min-width: 1500px) {
   .container_list_cards {
     left: 54%;
+  }
+}
+@media (min-width: 722px) and (max-width: 1000px) {
+  .container_list_cards {
+    left: 515px;
+  }
+}
+@media (max-width: 850px) {
+  .container_filters {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
 }

@@ -38,7 +38,7 @@ const FormValuesComponent = ({ addValues }) => {
           <div className="values">
             <label>Valor</label>
             <input
-              type="text"
+              type="number"
               required
               value={formValues.value}
               onChange={(event) =>

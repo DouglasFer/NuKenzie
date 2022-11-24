@@ -5,7 +5,7 @@
   height: 96px;
   left: 258px;
   top: 494px;
-  max-width: 36%;
+  max-width: 50%;
 }
 .value_total {
   display: flex;
@@ -25,15 +25,23 @@
   margin-left: 66px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 650px) {
   .container_total_money {
     left: 70px;
-    width: 363px;
-    max-width: 73%;
   }
 }
 @media (min-width: 1500px) {
   .container_total_money {
     left: 30%;
+  }
+}
+@media (max-width: 1000px) {
+  .container_total_money {
+    left: 140px;
+  }
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  .container_total_money {
+    left: 80px;
   }
 }

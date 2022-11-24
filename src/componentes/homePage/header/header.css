@@ -1,12 +1,12 @@
 .header_container {
   width: 100%;
   height: 80px;
-  display: flex;
-  gap: 59%;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: -1px 7px 15px -4px rgb(0 0 0 / 20%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 .header_container h2 b {
   color: #fd377e;
@@ -21,11 +21,4 @@
   font-size: 16px;
   font-weight: 500;
   margin-right: -143px;
-}
-
-@media (max-width: 599px) {
-  .header_container {
-    width: 100%;
-    justify-content: flex-start;
-  }
 }
